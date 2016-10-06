@@ -43,6 +43,8 @@ export class DestinationComponent implements OnInit {
     {id: 49, name: 'West Virginia'}, {id: 50, name: 'Wisconsin'},
     {id: 51, name: 'Wyoming'}];
 
+  public address: Object;
+
   constructor(
     private _planetservice: DestinationService) {
     this.dataSource = Observable.create((observer: any) => {
@@ -55,6 +57,15 @@ export class DestinationComponent implements OnInit {
   ngOnInit() {
     this._planetservice.getPlanets().then(planets => this.planetsList = planets);
   }
+
+    getAddress(place: Object) {
+        this.address = place['formatted_address'];
+        let location = place['geometry']['location'];
+        let lat =  location.lat();
+        let lng = location.lng();
+        console.log('Address Object', place);
+    }
+
 
   public getStatesAsObservable(token: string): Observable<any> {
     let query = new RegExp(token, 'ig');

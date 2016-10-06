@@ -13,6 +13,9 @@
 <div *ngIf="typeaheadNoResults===true" class="" style="">
   <i class="glyphicon glyphicon-remove"></i> No Results Found
 </div>
+
+<input style="width:500px;" type="text" [(ngModel)] = "address"  (setAddress) = "getAddress($event)" pnPlace/>
+
 <!--
 <div class="card" *ngFor="let planet of planetsList">
   <div class="content">
