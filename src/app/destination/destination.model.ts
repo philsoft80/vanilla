@@ -1,10 +1,5 @@
-export class Destination {
-    position: number;
-    name: string;
-    distanceFromSun: number;
-    description: string;
-}
 
+/*
 export class DestinationData {
     customPermission: string;
     allowAccess: boolean;
@@ -12,3 +7,4 @@ export class DestinationData {
     isBusy: boolean;
     isSelfBusy: boolean;
 }
+*/

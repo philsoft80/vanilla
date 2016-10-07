@@ -1,5 +1,5 @@
 /* tslint:disable:no-unused-variable */
-
+/*
 import { TestBed, async, inject } from '@angular/core/testing';
 import { DestinationService } from './destination.service';
 
@@ -14,3 +14,4 @@ describe('Service: Destination', () => {
     expect(service).toBeTruthy();
   }));
 });
+*/

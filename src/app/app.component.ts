@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
 
-  hey() {
-    console.log("close");
+  renderAttractions(place: Object) {
+    console.log('Render attractions for this', place);
   }
 }
